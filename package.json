@@ -1,0 +1,24 @@
+{
+  "name": "web-app",
+  "version": "1.0.0",
+  "description": "responsive html5 default template with bootstrap",
+  "main": "index.js",
+  "directories": {
+    "doc": "doc"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "responsive",
+    "HTML5",
+    "Web Application",
+    "Bootstrap"
+  ],
+  "author": "Joshua Youngjae Ji",
+  "license": "MIT",
+  "dependencies": {
+    "bootstrap": "^3.3.6",
+    "gulp": "^3.9.1"
+  }
+}
