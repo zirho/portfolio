@@ -5,11 +5,15 @@ var path              = require('path');
 var HtmlWebpackPlugin = require('html-webpack-plugin')
 
 module.exports = {
-  devtool: 'source-map',
-  entry: [ './app/entry.js' ],
+  devtool: 'cheap-eval-source-map',
+  entry: [
+    'webpack-dev-server/client?http://localhost:8080',
+    'webpack/hot/dev-server',
+    './app/entry.js'
+  ],
   output: {
     path:       path.join(__dirname, 'dist'),
-    filename:   '/js/bundle-[hash].js',
+    filename:   'bundle.js',
   },
   module: {
     loaders: [
@@ -29,14 +33,13 @@ module.exports = {
     ]
   },
   plugins: [
-    new webpack.optimize.UglifyJsPlugin({
-      compressor: {
-        warnings: false,
-      },
-    }),
-    new webpack.optimize.OccurenceOrderPlugin(),
+    new webpack.HotModuleReplacementPlugin(),
     new HtmlWebpackPlugin({
       template: './app/index.html'
     })
-  ]
+  ],
+  devServer: {
+    hot: true,
+    inline: true,
+  }
 };
