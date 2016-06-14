@@ -1,10 +1,11 @@
 // Accept hot module reloading
-if (module.hot) {
-  module.hot.accept()
+if (process.env.NODE_ENV !== 'production') {
+  if (module.hot) {
+    module.hot.accept()
+  }
 }
 
-'use strict';
-import 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap/dist/css/bootstrap.min.css'
 
-console.log('a');
+console.log('a')
 
