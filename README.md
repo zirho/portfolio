@@ -8,9 +8,9 @@ Starting point for a general web app with things below.
 
 # This kit includes 
 
-* Webpack as bundler
-* Webpack dev server for development environment
-* Grunt as task manager
+* Webpack as a bundler
+* Webpack dev server for a development environment
+* Grunt as a task manager
 
 Development Environment 
 
