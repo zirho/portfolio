@@ -35,11 +35,11 @@ module.exports = function(grunt) {
 			}
 		},
     eslint: {
-      src: ['app/**/*.js']
+      src: ['src/**/*.js']
     },
 		watch: {
 			app: {
-				files: ['app/**/*', 'web_modules/**/*'],
+				files: ['src/**/*'],
 				tasks: ['webpack:build-dev'],
 				options: {
 					spawn: false,

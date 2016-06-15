@@ -9,7 +9,7 @@ module.exports = {
   entry: [
     'webpack-dev-server/client?http://localhost:8080',
     'webpack/hot/dev-server',
-    './app/entry.js'
+    './src/entry.js'
   ],
   output: {
     path:       path.join(__dirname, 'dist'),
@@ -20,7 +20,7 @@ module.exports = {
       {
         test:   /\.js/,
         loader: 'babel',
-        include: __dirname + '/app'
+        include: __dirname + '/src'
       },
       {
         test:   /\.css$/,
@@ -35,7 +35,7 @@ module.exports = {
   plugins: [
     new webpack.HotModuleReplacementPlugin(),
     new HtmlWebpackPlugin({
-      template: './app/index.html'
+      template: './src/index.html'
     })
   ],
   devServer: {

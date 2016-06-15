@@ -6,7 +6,7 @@ var HtmlWebpackPlugin = require('html-webpack-plugin')
 
 module.exports = {
   devtool: 'source-map',
-  entry: [ './app/entry.js' ],
+  entry: [ './src/entry.js' ],
   output: {
     path:       path.join(__dirname, 'dist'),
     filename:   '/js/bundle-[hash].js',
@@ -16,7 +16,7 @@ module.exports = {
       {
         test:   /\.js/,
         loader: 'babel',
-        include: __dirname + '/app'
+        include: __dirname + '/src'
       },
       {
         test:   /\.css$/,
@@ -36,7 +36,7 @@ module.exports = {
     }),
     new webpack.optimize.OccurenceOrderPlugin(),
     new HtmlWebpackPlugin({
-      template: './app/index.html'
+      template: './src/index.html'
     }),
     new webpack.DefinePlugin({
       'process.env.NODE_ENV': JSON.stringify('production')

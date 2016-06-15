@@ -5,6 +5,7 @@ Starting point for a general web app with things below.
 * Webpack
 * Babel  - es2015, stage-2
 * Eslint - airbnb-base 
+* Mocha unit testing - mocha, enzyme, jsdom
 
 # This kit includes 
 
@@ -53,6 +54,8 @@ npm run build
 npm run dev
 
 npm run lint
+
+npm test 
 ```
 
 ##### eslint 
