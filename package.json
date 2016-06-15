@@ -36,7 +36,6 @@
   "author": "Joshua Youngjae Ji",
   "license": "MIT",
   "dependencies": {
-    "gulp": "^3.9.1"
   },
   "devDependencies": {
     "babel": "^6.5.2",
