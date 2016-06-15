@@ -5,7 +5,5 @@ if (process.env.NODE_ENV !== 'production') {
   }
 }
 
-import 'bootstrap/dist/css/bootstrap.min.css'
-
 console.log('a')
 
