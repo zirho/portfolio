@@ -1,50 +1,22 @@
-# Webapp boilerplate 
+# My Portfolio webapp with reactjs
 
-Starting point for a general web app with things below.
+This codes are built on top of my webpack-app-starter repo.
+[webpack-app-starter](https://github.com/zirho/webpack-app-starter)
 
-* Webpack
-* Babel  - es2015, stage-2
+* react, react-router, react-router-bootstrap, react-bootstrap 
+* Scss, html5, modernizr 
+* Webpack with Babel [ es2015, react, stage-2 ] presets, HMR enabled
 * Eslint - airbnb-base 
 * Mocha unit testing - mocha, enzyme, jsdom
 
-# This kit includes 
+# Structure
 
-* Webpack as a bundler
-* Webpack dev server for a development environment
-* Grunt as a task manager
+- `src/**/*.js` source codes
+- `src/**/*Spec.js` unit testing
+- `dist/*` bundled result 
 
-Development Environment 
-
-* Hot module replacement
-
-Production environment
-
-* Uglyfy js files 
-* Generate html including a dynamic hashed bundle name 
 
 # Commands
-
-##### Webpack standalone 
-
-Generate files from `app` to `dist` using `webpack.config.js`
-```
-webpack 
-```
-
-Start webpack dev server using `webpack.config.dev.js`
-```
-webpack-dev-server --config webpack.config.dev.js
-```
-
-##### Webpack with grunt 
-
-```
-grunt build
-
-grunt dev
-
-grunt eslint
-```
 
 ##### With npm scripts 
 
@@ -58,8 +30,3 @@ npm run lint
 npm test 
 ```
 
-##### eslint 
-
-```
-eslint app
-```

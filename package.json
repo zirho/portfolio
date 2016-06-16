@@ -6,15 +6,15 @@
   "directories": {
     "doc": "doc"
   },
-  "repository" : {
-    "type" : "git",
-    "url" : "https://github.com/zirho/webpack-app-starter"
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/zirho/webpack-app-starter"
   },
   "scripts": {
-    "test": "NODE_ENV=test mocha --compilers js:babel-core/register --require test/index.js \"./src/**/*.test.js\"",
+    "test": "NODE_ENV=test mocha --compilers js:babel-core/register --require test/index.js \"./src/**/*Spec.js\"",
     "lint": "eslint app",
     "dev": "webpack-dev-server --config webpack.config.dev.js",
-    "build": "webpack",
+    "build": "eslint app && webpack",
     "grunt-dev": "grunt default",
     "grunt-build": "grunt build"
   },
@@ -35,8 +35,7 @@
   ],
   "author": "Joshua Youngjae Ji",
   "license": "MIT",
-  "dependencies": {
-  },
+  "dependencies": {},
   "devDependencies": {
     "babel": "^6.5.2",
     "babel-core": "^6.9.1",
@@ -63,6 +62,7 @@
     "gruntify-eslint": "^2.0.0",
     "html-webpack-plugin": "^2.21.0",
     "jsdom": "^9.2.1",
+    "lodash": "^4.13.1",
     "matchdep": "^1.0.1",
     "mocha": "^2.5.3",
     "modernizr": "^3.3.1",
