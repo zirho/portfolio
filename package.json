@@ -12,9 +12,9 @@
   },
   "scripts": {
     "test": "NODE_ENV=test mocha --compilers js:babel-core/register --require test/index.js \"./src/**/*Spec.js\"",
-    "lint": "eslint app",
+    "lint": "eslint src",
     "dev": "webpack-dev-server --config webpack.config.dev.js",
-    "build": "eslint app && webpack",
+    "build": "eslint src && webpack",
     "grunt-dev": "grunt default",
     "grunt-build": "grunt build"
   },

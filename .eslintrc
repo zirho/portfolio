@@ -5,6 +5,7 @@
     "comma-dangle": 0,
     "no-console": 0,
     "semi": [2, "never"],
+    "max-len": 0,
     "func-names": 0,
     "space-before-function-paren": 0,
     "no-multi-spaces": 0,
@@ -12,9 +13,21 @@
     "babel/new-cap": 1,
     "babel/object-shorthand": 1,
     "babel/arrow-parens": 1,
-    "babel/no-await-in-loop": 1
+    "babel/no-await-in-loop": 1,
+    "react/jsx-uses-react": "error",
+    "react/jsx-uses-vars": "error"
   },
   "plugins": [
-    "babel"
-  ]
+    "babel",
+    "react"
+  ],
+  "globals": {
+    "describe": true,
+    "it": true
+  },
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
+    }
+  }
 }
