@@ -11,10 +11,10 @@ This codes are built on top of my webpack-app-starter repo.
 
 # Structure
 
+- `src/markup/*` initial markup files - html, css, bootstrap, fontawesome
 - `src/**/*.js` source codes
 - `src/**/*Spec.js` unit testing
 - `dist/*` bundled result 
-
 
 # Commands
 
