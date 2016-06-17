@@ -1,5 +1,4 @@
 import React, { Component } from 'react'
-import './projects.scss'
 import { ProjectData } from './projectData'
 
 class Project extends Component {
@@ -14,14 +13,14 @@ class Project extends Component {
             <i className="fa fa-desktop fa-lg" aria-hidden="true"></i> <h4 className="name">{item.name}</h4>
           </header>
 
-          <img src={item.thumb} className="thumb" />
+          {item.role ? <img src={item.thumb} className="thumb" /> : ''}
 
           <div className="proj-content">
-            <span className="role">{item.role.join(', ')}</span>
-            <span className="time">{item.period}</span>
-            <span className="tech">{item.skills.join(', ')}</span>
+            {item.role ? <span className="role">{item.role.join(', ')}</span> : ''}
+            {item.period ? <span className="time">{item.period}</span> : ''}
+            {item.skills ? <span className="tech">{item.skills.join(', ')}</span> : ''}
+            {item.desc ? <div className="desc">{item.desc}</div> : ''}
 
-            <div className="desc">{item.desc}</div>
           </div>
         </div>
       </article>
@@ -45,4 +44,4 @@ class Projects extends Component {
   }
 }
 
-export { Projects }
+export { Project, Projects }

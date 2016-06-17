@@ -11,6 +11,7 @@ import React    from 'react'
 import ReactDOM from 'react-dom'
 
 import { Projects } from './components/projects'
+import './components/projects.scss'
 
 ReactDOM.render(
   <Projects />, document.getElementById('content')

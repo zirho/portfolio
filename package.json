@@ -11,7 +11,7 @@
     "url": "https://github.com/zirho/webpack-app-starter"
   },
   "scripts": {
-    "test": "NODE_ENV=test mocha --compilers js:babel-core/register --require test/index.js \"./src/**/*Spec.js\"",
+    "test": "NODE_ENV=test mocha --compilers js:babel-core/register --require test/index.js \"./src/**/*.spec.js\"",
     "lint": "eslint src",
     "dev": "webpack-dev-server --content-base dist --config webpack.config.dev.js",
     "build": "eslint src && webpack",

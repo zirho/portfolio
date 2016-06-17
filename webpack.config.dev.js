@@ -31,7 +31,7 @@ module.exports = {
         loaders: ['style', 'css']
       },
       {
-        test: /\.(jpe?g|gif|woff|woff2|eot|ttf|svg)(\?v=[0-9]\.[0-9]\.[0-9])?$/,
+        test: /\.(jpe?g|png|gif|woff|woff2|eot|ttf|svg)(\?v=[0-9]\.[0-9]\.[0-9])?$/,
         loader: 'url'
       }
     ]
