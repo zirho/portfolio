@@ -3,3 +3,4 @@ dist/js
 dist/index.html
 npm-debug.log
 dist/img
+.DS_Store
