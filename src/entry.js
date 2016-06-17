@@ -5,5 +5,13 @@ if (process.env.NODE_ENV !== 'production') {
   }
 }
 
-console.log('a')
+import 'bootstrap/dist/css/bootstrap.min.css'
+import './style.scss'
+import React    from 'react'
+import ReactDOM from 'react-dom'
 
+import { Projects } from './components/projects'
+
+ReactDOM.render(
+  <Projects />, document.getElementById('content')
+)
