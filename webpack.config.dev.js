@@ -23,6 +23,10 @@ module.exports = {
         include: __dirname + '/src'
       },
       {
+        test:   /\.scss$/,
+        loaders: ['style', 'css', 'sass']
+      },
+      {
         test:   /\.css$/,
         loaders: ['style', 'css']
       },
