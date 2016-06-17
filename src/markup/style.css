@@ -148,6 +148,7 @@ body {
 .fixed {
   position: fixed;
   top: 100px;
+  width: 100%;
   left: 0;
 }
 
