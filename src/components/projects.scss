@@ -9,6 +9,7 @@ $thumb-border-color: #d3d3d3;
   }
 
   .project {
+    width: 100%;
     margin-bottom: 10px;
     border: 1px solid #eaeaea;
     display: inline-block;
@@ -20,6 +21,10 @@ $thumb-border-color: #d3d3d3;
       width: 100%;
       border-top: 1px solid $thumb-border-color;
       border-bottom: 1px solid $thumb-border-color;
+      &.no-thumb {
+        text-align: center;
+        padding: 30px 0;
+      }
     }
 
     .proj-content {

@@ -8,8 +8,8 @@ module.exports = {
   devtool: 'source-map',
   entry: [ './src/entry.js' ],
   output: {
-    path:       path.join(__dirname, 'dist'),
-    filename:   '/js/bundle-[hash].js',
+    path:     path.join(__dirname, 'dist'),
+    filename: 'js/bundle-[hash].js',
   },
   module: {
     loaders: [
