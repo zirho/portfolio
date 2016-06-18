@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { ProjectData } from './projectData'
+import { ProjectData }      from './projectData'
 
 class Project extends Component {
   render() {

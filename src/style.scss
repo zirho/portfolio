@@ -1,4 +1,4 @@
-html, body, .main, .fixed, #main-column, #content {
+html, body, #app, .main, .fixed, #main-column, #content {
   height: 100%;
 }
 
@@ -18,10 +18,13 @@ html, body, .main, .fixed, #main-column, #content {
   padding-top: 3px;
   border-bottom: 1px solid #eaeaea;
 }
+.nav>li>a:focus,
 .nav>li>a {
+  background: transparent;
   border-bottom: 3px solid transparent;
 }
-.nav>li>a:focus, .nav>li>a:hover {
+.nav>li>a.active,
+.nav>li>a:hover {
   background: #f4f6f7;
   border-bottom: 3px solid #21c9dc;
 }

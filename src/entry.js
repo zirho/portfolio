@@ -7,12 +7,16 @@ if (process.env.NODE_ENV !== 'production') {
 
 import 'bootstrap/dist/css/bootstrap.min.css'
 import './style.scss'
-import React    from 'react'
-import ReactDOM from 'react-dom'
+import App                                           from './components/app'
+import React                                         from 'react'
+import { render }                                    from 'react-dom'
+import { Router, Route, browserHistory, IndexRoute } from 'react-router'
+import { Projects }                                  from './components/projects'
 
-import { Projects } from './components/projects'
-import './components/projects.scss'
-
-ReactDOM.render(
-  <Projects />, document.getElementById('content')
-)
+render((
+  <Router history={browserHistory}>
+    <Route path="/" component={App}>
+      <IndexRoute component={Projects}/>
+    </Route>
+  </Router>
+), document.getElementById('app'))
