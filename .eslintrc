@@ -15,7 +15,8 @@
     "babel/arrow-parens": 1,
     "babel/no-await-in-loop": 1,
     "react/jsx-uses-react": "error",
-    "react/jsx-uses-vars": "error"
+    "react/jsx-uses-vars": "error",
+    "key-spacing": 0
   },
   "plugins": [
     "babel",

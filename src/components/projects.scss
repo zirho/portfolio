@@ -23,6 +23,9 @@ $thumb-border-color: #d3d3d3;
       background: white;
       color: #737373;
 
+      a {
+        color: #0aa1af;
+      }
       .thumb {
         width: 100%;
         border-top: 1px solid $thumb-border-color;

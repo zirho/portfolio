@@ -1,6 +1,7 @@
 import { baseName }         from '../config'
 import React, { Component } from 'react'
 import { IndexLink, Link }  from 'react-router'
+import { Profile } from './profile'
 
 class App extends Component {
   render() {
@@ -8,7 +9,7 @@ class App extends Component {
       <div>
         <header className="header navbar navbar-inverse navbar-fixed-top">
           <div className="top-bar container-fluid text-center">
-            <Link to={baseName + "/"} className="navbar-brand">Senior Software Engineer</Link>
+            <Link to={`${baseName}/`} className="navbar-brand">Senior Software Engineer</Link>
           </div>
         </header>
         <div className="fixed">
@@ -16,18 +17,7 @@ class App extends Component {
             <div className="row">
               <aside id="left-column" className=" no-padding col-xs-12 col-sm-4 col-lg-3">
 
-                <section className="profile">
-                  <img src="img/profile.png" className="profile-pic" />
-                  <div className="">
-                    <span className="profile-name">Joshua Youngjae Ji</span>
-                  </div>
-
-                  <div className="contact">
-                    <span className="email">zirho6@gmail.com</span>
-                    <span className="cell">626-318-7727</span>
-                    <span className="address">Los Angeles, California</span>
-                  </div>
-                </section>
+                <Profile />
 
                 <section className="filter">
                   <h4> Filters</h4>
@@ -64,8 +54,8 @@ class App extends Component {
                     <div className="no-padding container-fluid">
                       <div id="navbar" className="no-padding">
                         <ul className="no-padding nav navbar-nav nav-justified">
-                          <li><IndexLink to={baseName + "/"} activeClassName="active">Portfolio</IndexLink></li>
-                          <li><Link to={baseName + "/about"} activeClassName="active">About</Link></li>
+                          <li><IndexLink to={`${baseName}/`} activeClassName="active">Portfolio</IndexLink></li>
+                          <li><Link to={`${baseName}/about`} activeClassName="active">About</Link></li>
                           <li><a target="_blank" href="https://github.com/zirho/">Github</a></li>
                           <li><a target="_blank" href="http://zirho.github.io/">Blog</a></li>
                         </ul>

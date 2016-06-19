@@ -17,13 +17,14 @@ import { baseName } from './config'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import './style.scss'
 import './components/projects.scss'
+import './components/profile.scss'
 
 render((
   <Router history={browserHistory}>
-    <Route path={baseName + '/'} component={App}>
+    <Route path={`${baseName}/`} component={App}>
 
       <IndexRoute component={Projects}/>
-      <Route path={baseName + "/about"} component={About}/>
+      <Route path={`${baseName}/about`} component={About}/>
     </Route>
   </Router>
 ), document.getElementById('app'))

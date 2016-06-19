@@ -1,0 +1,59 @@
+.profile {
+  padding: 40px 0 0;
+  border-bottom: 1px solid #eaeaea;
+  a {
+    color: #0aa1af;
+  }
+  .contact, .desc {
+    border-top: 1px solid #eaeaea;
+    margin: 20px 0;
+    padding-top: 20px;
+    font-weight: 500;
+
+    >span {
+      display: block;
+    }
+  }
+  .desc {
+    padding-left: 23px;
+    padding-right: 13px;
+  }
+  .profile-pic {
+    border-radius: 50%;
+    width: 100px;
+    margin-bottom: 15px;
+  }
+  .profile-name {
+    font-weight: 500;
+  }
+}
+
+@media (max-width: 768px) {
+  .profile {
+    padding: 20px 0 10px;
+    .profile-pic {
+      width: 30px;
+      display: inline;
+      margin-bottom: 0;
+      margin-right: 10px;
+    }
+    > div {
+      display: inline;
+    }
+    .contact {
+      display: block;
+      padding: 10px 0 0;
+      margin: 10px 0 0;
+      > span {
+        display: inline;
+        margin-right: 5px;
+        &.cell, &.address {
+          display: none;
+        }
+      }
+    }
+    .desc {
+      display: none;
+    }
+  }
+}
