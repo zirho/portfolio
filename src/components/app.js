@@ -21,6 +21,12 @@ class App extends Component {
                   <div className="">
                     <span className="profile-name">Joshua Youngjae Ji</span>
                   </div>
+
+                  <div className="contact">
+                    <span className="email">zirho6@gmail.com</span>
+                    <span className="cell">626-318-7727</span>
+                    <span className="address">Los Angeles, California</span>
+                  </div>
                 </section>
 
                 <section className="filter">

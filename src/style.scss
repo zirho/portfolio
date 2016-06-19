@@ -29,7 +29,7 @@ html, body, #app, .main, .fixed, #main-column, #content {
   border-bottom: 3px solid #21c9dc;
 }
 #content {
-  padding: 72px 27px 0 15px;
+  padding: 72px 15px 0 15px;
   padding-bottom: 100px;
   margin: 0;
 
@@ -98,16 +98,26 @@ body {
 }
 
 .profile {
-  padding: 40px 0;
+  padding: 40px 0 0;
   border-bottom: 1px solid #eaeaea;
-}
-.profile-pic {
-  border-radius: 50%;
-  width: 100px;
-  margin-bottom: 15px;
-}
-.profile-name {
-  font-weight: 500;
+  .contact {
+    border-top: 1px solid #eaeaea;
+    margin: 20px 0;
+    padding-top: 20px;
+    font-weight: 500;
+
+    >span {
+      display: block;
+    }
+  }
+  .profile-pic {
+    border-radius: 50%;
+    width: 100px;
+    margin-bottom: 15px;
+  }
+  .profile-name {
+    font-weight: 500;
+  }
 }
 
 .fixed {
@@ -152,6 +162,9 @@ body {
 }
 
 .filter {
+  // todo : implement filter
+  display: none;
+
   padding: 30px;
   padding-left: 50px;
   text-align: left;
@@ -169,15 +182,28 @@ body {
   }
   .profile {
     padding: 20px 0 10px;
-  }
-  .profile-pic {
-    width: 30px;
-    display: inline;
-    margin-bottom: 0;
-    margin-right: 10px;
-  }
-  .profile > div {
-    display: inline;
+    .profile-pic {
+      width: 30px;
+      display: inline;
+      margin-bottom: 0;
+      margin-right: 10px;
+    }
+    > div {
+      display: inline;
+    }
+    .contact {
+      display: block;
+      padding: 10px 0 0;
+      margin: 10px 0 0;
+      > span {
+        display: inline;
+        margin-right: 5px;
+        &.cell, &.address {
+          display: none;
+        }
+      }
+    }
+
   }
   #content {
     padding: 0;
