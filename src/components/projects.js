@@ -40,7 +40,7 @@ class Projects extends Component {
     )
 
     return (
-      <div>{projectList}</div>
+      <div className="project-list">{projectList}</div>
     )
   }
 }

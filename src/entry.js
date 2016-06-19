@@ -5,18 +5,25 @@ if (process.env.NODE_ENV !== 'production') {
   }
 }
 
-import 'bootstrap/dist/css/bootstrap.min.css'
-import './style.scss'
-import App                                           from './components/app'
 import React                                         from 'react'
 import { render }                                    from 'react-dom'
 import { Router, Route, browserHistory, IndexRoute } from 'react-router'
-import { Projects }                                  from './components/projects'
+
+import App          from './components/app'
+import { Projects } from './components/projects'
+import { About }    from './components/about'
+import { baseName } from './config'
+
+import 'bootstrap/dist/css/bootstrap.min.css'
+import './style.scss'
+import './components/projects.scss'
 
 render((
   <Router history={browserHistory}>
-    <Route path="/" component={App}>
+    <Route path={baseName + '/'} component={App}>
+
       <IndexRoute component={Projects}/>
+      <Route path={baseName + "/about"} component={About}/>
     </Route>
   </Router>
 ), document.getElementById('app'))

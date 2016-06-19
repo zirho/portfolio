@@ -1,7 +1,8 @@
 'use strict';
 
-var webpack           = require('webpack');
-var path              = require('path');
+var config            = require('./src/config')
+var webpack           = require('webpack')
+var path              = require('path')
 var HtmlWebpackPlugin = require('html-webpack-plugin')
 
 module.exports = {
@@ -13,7 +14,7 @@ module.exports = {
   ],
   output: {
     path:       path.join(__dirname, 'dist'),
-    filename:   'bundle.js',
+    filename:   config.baseName + '/bundle.js',
   },
   module: {
     loaders: [
@@ -45,5 +46,8 @@ module.exports = {
   devServer: {
     hot: true,
     inline: true,
-  }
+    historyApiFallback: {
+      index: '/'
+    }
+  },
 };

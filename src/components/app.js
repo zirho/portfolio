@@ -1,8 +1,6 @@
+import { baseName }         from '../config'
 import React, { Component } from 'react'
-import { render }           from 'react-dom'
-import { Link } from 'react-router'
-import { Projects }         from './projects'
-import './projects.scss'
+import { IndexLink, Link }  from 'react-router'
 
 class App extends Component {
   render() {
@@ -10,7 +8,7 @@ class App extends Component {
       <div>
         <header className="header navbar navbar-inverse navbar-fixed-top">
           <div className="top-bar container-fluid text-center">
-            <Link to="/"className="navbar-brand">Senior Software Engineer</Link>
+            <Link to={baseName + "/"} className="navbar-brand">Senior Software Engineer</Link>
           </div>
         </header>
         <div className="fixed">
@@ -60,8 +58,8 @@ class App extends Component {
                     <div className="no-padding container-fluid">
                       <div id="navbar" className="no-padding">
                         <ul className="no-padding nav navbar-nav nav-justified">
-                          <li><Link to="/" activeClassName="active">Portfolio</Link></li>
-                          <li><Link to="/about" activeClassName="active">About</Link></li>
+                          <li><IndexLink to={baseName + "/"} activeClassName="active">Portfolio</IndexLink></li>
+                          <li><Link to={baseName + "/about"} activeClassName="active">About</Link></li>
                           <li><a target="_blank" href="https://github.com/zirho/">Github</a></li>
                           <li><a target="_blank" href="http://zirho.github.io/">Blog</a></li>
                         </ul>
