@@ -5,6 +5,8 @@ var webpack           = require('webpack')
 var path              = require('path')
 var HtmlWebpackPlugin = require('html-webpack-plugin')
 
+var outputDir = path.join(__dirname, 'dist')
+
 module.exports = {
   devtool: 'cheap-eval-source-map',
   entry: [
@@ -46,8 +48,12 @@ module.exports = {
   devServer: {
     hot: true,
     inline: true,
+    contentBase: outputDir,
     historyApiFallback: {
       index: '/'
+    },
+    stats: {
+      chunks: false
     }
   },
 };

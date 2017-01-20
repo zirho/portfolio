@@ -4,6 +4,8 @@ var webpack           = require('webpack');
 var path              = require('path');
 var HtmlWebpackPlugin = require('html-webpack-plugin')
 
+var outputDir = path.join(__dirname, 'dist')
+
 module.exports = {
   devtool: 'source-map',
   entry: [ './src/entry.js' ],

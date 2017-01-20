@@ -1,5 +1,5 @@
 node_modules
-dist/js
+dist
 dist/index.html
 npm-debug.log
 dist/img

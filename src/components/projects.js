@@ -13,7 +13,7 @@ class Project extends Component {
             <i className="fa fa-desktop fa-lg" aria-hidden="true"></i> <h4 className="name">{item.name}</h4>
           </header>
 
-          {item.thumb ? <img src={item.thumb} className="thumb" /> : <div className="thumb no-thumb"><i className="fa fa-television fa-5x" aria-hidden="true"></i></div>}
+          {item.thumb ? <img src={`${item.thumb}`} className="thumb" /> : <div className="thumb no-thumb"><i className="fa fa-television fa-5x" aria-hidden="true"></i></div>}
 
           <div className="proj-content">
             {item.url ? <a href={item.url} target="_blank" className="url">{item.url}</a> : ''}
