@@ -1,5 +1,25 @@
 const projects = [
   {
+    name: 'SteelHouse PixelUI',
+    url: 'https://pixel.steelhouse.com',
+    location: 'Culver City, California',
+    period: 'Dec 2016 - Current',
+    thumb: 'img/projects/steelhouse2.png',
+    role: ['Senior Software Engineer'],
+    skills: ['JavaScript', 'Node.js', 'react', 'webpack', 'Flux (redux)', 'less', 'HMR'],
+    desc: 'Built marketing pixel(crawler) JavaScript code and the integration apps on top three e-commerce solutions which include Shopify, Magento and Prestashop via their API or modules. Built user facing integration and walkthrough guide site with react and Node.js'
+  },
+  {
+    name: 'SteelHouse Adsuite',
+    url: 'https://ui.steelhouse.com',
+    location: 'Culver City, California',
+    period: 'June 2016 - Dec 2016 (7 months)',
+    thumb: 'img/projects/steelhouse1.png',
+    role: ['Senior Software Engineer'],
+    skills: ['JavaScript', 'PHP', 'jQuery', 'react', 'webpack', 'CSS', 'Sass', 'HMR'],
+    desc: 'Maintained and refactored a legacy web app with the latest tech stack, such as JS ES6 with HMR-enabled on webpack. Start adding unit tests by decoupling presentational and logical components. Integrate the system with external ads apis such as Facebook, Twitter, Instagram. Refactor workflow of react-redux-based apps to have HMR enabled with webpack.'
+  },
+  {
     name: 'Dr Pure Natural',
     url: 'https://www.drnaturalus.com',
     location: 'La Mirada, California',

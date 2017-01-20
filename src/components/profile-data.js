@@ -2,7 +2,7 @@ const profile = {
   name:      'Joshua Younjgae Ji',
   title:     'Senior Software Engineer',
   email:     'zirho6@gmail.com',
-  cell:      '626-318-7727',
+  cell:      '323-382-3979',
   address:   'Los Angeles, CA',
   github:    'https://github.com/zirho/',
   blog:      'http://zirho.github.io/',
