@@ -78,7 +78,7 @@ const projects = [
   },
   {
     name: 'PipingXE',
-    url: 'http://www.zirho.net/pp_prom',
+    url: 'Url not available',
     location: 'Seoul, Korea',
     period: 'Feb, 2011',
     thumb: 'img/projects/pipingxe.png',
@@ -108,7 +108,7 @@ const projects = [
   },
   {
     name: 'iHandong',
-    url: 'http://www.zirho.net/iphone/8861',
+    url: 'Url not available',
     location: 'Pohang, Korea',
     period: 'Apr 2010 - Jun 2010 (a month)',
     thumb: 'img/projects/ihandong.jpg',
@@ -118,7 +118,7 @@ const projects = [
   },
   {
     name: 'HGUBus - school bus schedule',
-    url: 'http://www.zirho.net/iphone/6673',
+    url: 'Url not available',
     location: 'Pohang, Korea',
     period: 'Apr 2010',
     thumb: 'img/projects/bus.jpg',
@@ -128,7 +128,7 @@ const projects = [
   },
   {
     name: 'HGUBob - school food menu',
-    url: 'http://www.zirho.net/iphone/7265',
+    url: 'Url not available',
     location: 'Pohang, Korea',
     period: 'Apr 2010',
     thumb: 'img/projects/bob.jpg',
@@ -138,7 +138,7 @@ const projects = [
   },
   {
     name: 'XE widgets - open source projects',
-    url: 'http://www.zirho.net/photowidgets',
+    url: 'Url not available',
     location: 'Seoul, Korea',
     period: 'Mar 2010',
     thumb: 'img/projects/widgetxe.png',
@@ -148,7 +148,7 @@ const projects = [
   },
   {
     name: 'WizardXE - open source projects',
-    url: 'http://www.zirho.net/?mid=intro_eng',
+    url: 'Url not available',
     location: 'Seoul, Korea',
     period: 'Jan 2010',
     thumb: 'img/projects/wizardxe.png',
@@ -158,7 +158,7 @@ const projects = [
   },
   {
     name: 'jQuery Plugin',
-    url: 'http://www.zirho.net/?mid=imagefader',
+    url: 'Url not available',
     location: 'Seoul, Korea',
     period: 'Nov 2009',
     thumb: 'img/projects/jquery.plugin.png',
