@@ -15,7 +15,7 @@ export const Profile = () => (
     </div>
 
     <div className="desc">
-    This web app is built on top of my <a href="https://github.com/zirho/webpack-app-starter" target="_blank">webpack-app-starter</a>.<br/>
+    This web app is built on top of my webpack-app-starter.<br/>
     Webpack, Webpack dev server, Babel(es2015, stage-2), ESLint(Airbnb-base), reactjs, react-router, Scss, Bootstrap, Fontawesome, and testing(jsdom, enzyme)
     </div>
   </section>

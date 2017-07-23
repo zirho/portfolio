@@ -1,5 +1,15 @@
 const projects = [
   {
+    name: 'Chrome Extension',
+    url: 'Url not available',
+    location: 'Culver City, California',
+    period: 'Dec 2016 - Jul 2017',
+    thumb: 'img/projects/steel-ext.jpg',
+    role: ['Senior Software Engineer'],
+    skills: ['JavaScript', 'react', 'webpack', 'redux', 'css', 'HMR'],
+    desc: 'Built a simple chrome extension for easy access to all project urls in QA, Staging and Production environments. This is built as my own side project after office hours. This is basically a webapp, so mostly anything can be possible.'
+  },
+  {
     name: 'SteelHouse PixelUI',
     url: 'https://pixel.steelhouse.com',
     location: 'Culver City, California',
