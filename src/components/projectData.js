@@ -1,4 +1,23 @@
 const projects = [
+  // {
+  //   name: 'ppp',
+  //   url: 'ppp',
+  //   location: 'ppp',
+  //   period: 'ppp',
+  //   thumb: 'img/projects/ppp.png',
+  //   role: ['Senior Software Engineer', 'Project Manager'],
+  //   skills: ['JavaScript', 'Node.js', 'react', 'webpack', 'Flux (redux)', 'less', 'HMR'],
+  //   desc: ''
+  // },
+  {
+    name: 'Hobby Project (WIP)',
+    url: 'https://zirho-portfolio.herokuapp.com/',
+    period: 'Since Feb 2017',
+    thumb: 'img/projects/aqua.jpg',
+    role: ['Full Stack Software Engineer'],
+    skills: ['Node.js', 'mongodb', 'React', 'Redux', 'GraphQL', 'Apollo', 'webpack', 'CI/CD', 'SSR', 'styled component', 'docker', 'docker-cloud'],
+    desc: 'This is my hobby project. Demonstrative and laboratory work for applying cutting edge tech stacks thriving https://12factor.net/ elements. (temporarily on heroku). Data modeling in no-sql, fully responsive and pixel perfect UI/UX implementation, etc'
+  },
   {
     name: 'Chrome Extension',
     url: 'Url not available',
@@ -166,16 +185,6 @@ const projects = [
     skills: ['jQuery', 'JavaScript', 'CSS'],
     desc: 'Image fading slider is a jQuery plugin. That demonstrates images with effects which used to be only available in adobe flash in the past.'
   },
-  // {
-  //   name: 'ppp',
-  //   url: 'ppp',
-  //   location: 'ppp',
-  //   period: 'ppp',
-  //   thumb: 'img/projects/ppp.png',
-  //   role: ['Senior Software Engineer', 'Project Manager'],
-  //   skills: ['PHP', 'Magento', 'jQuery', 'JavaScript', 'CSS', 'Sass', 'CoffeeScript', 'Bootstrap'],
-  //   desc: ''
-  // },
 ]
 
 export { projects as ProjectData }

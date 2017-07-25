@@ -16,14 +16,14 @@ module.exports = {
   ],
   output: {
     path:       path.join(__dirname, 'dist'),
-    filename:   config.baseName + '/bundle.js',
+    filename:   `${config.baseName}/bundle.js`,
   },
   module: {
     loaders: [
       {
         test:   /\.js/,
         loader: 'babel',
-        include: __dirname + '/src'
+        include: `${__dirname}/src`
       },
       {
         test:   /\.scss$/,
@@ -40,6 +40,9 @@ module.exports = {
     ]
   },
   plugins: [
+    new webpack.DefinePlugin({
+      'process.env.NODE_ENV': JSON.stringify('development'),
+    }),
     new webpack.HotModuleReplacementPlugin(),
     new HtmlWebpackPlugin({
       template: './src/index.html'
