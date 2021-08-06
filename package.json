@@ -63,7 +63,7 @@
     "gruntify-eslint": "^2.0.0",
     "html-webpack-plugin": "^2.21.0",
     "jsdom": "^9.2.1",
-    "lodash": "^4.13.1",
+    "lodash": "^4.17.21",
     "matchdep": "^1.0.1",
     "mocha": "^2.5.3",
     "modernizr": "^3.3.1",
